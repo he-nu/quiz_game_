@@ -1,5 +1,5 @@
 test.py
-venv/
+.venv/
 build/
 dist/
 

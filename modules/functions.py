@@ -113,38 +113,3 @@ def format_question(question:str)->str:
             listed.insert(i, "\n")
     formatted = " ".join(listed)
     return formatted
-
-# def track_level_progress(answer:bool):
-#     while True:
-#         default = False
-#         check_list = []
-#         for i in range(constant.QUESTIONS_PER_LEVEL):
-#             print(i, "level")
-#             check_list.append(answer)
-#             if len(check_list) < constant.QUESTIONS_PER_LEVEL:
-#                 yield default
-#         if (all(check_list)):
-#             default = True
-#         yield default
-
-# def track_game_progress(level_progress:bool, level:int)->int:
-#     """ Takes in level progress and current level.
-#     Increases or decreases level based level progress.
-#     """
-#     while True:
-#         current_level = level
-#         rounds = constant.QUESTIONS_PER_LEVEL
-#         for i in range(rounds):
-#             print(level_progress, "from game", i, "iter" )
-#             if i == 2:
-#                 if level_progress == True:
-#                     current_level += 1
-#                     yield current_level
-#                 else:
-#                     current_level -= 1
-#                     if current_level < 0:
-#                         current_level = 0
-#                     yield current_level
-#             else:
-#                 yield current_level
-
